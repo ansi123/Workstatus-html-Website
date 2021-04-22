@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  overflow-x: hidden !important;
+  color: #333333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+/************************************ Common Classes *************************************************/
+.primaryButton {
+  border-radius: 0%;
+  background-color: $primary !important;
+  border: none;
+  width: 212px;
+  padding: 20px;
+
+  font: normal normal 20px/24px "Lato";
+  /* identical to box height */
+
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ffffff !important;
+    color: #4461d7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  @include breakpoint(mobile) {
+    width: 240px !important;
+    font: 500 normal 16px/19px "Lato";
+  }
+}
+
+.secondry-btn {
+  border-radius: 0%;
+  background-color: $secondary;
+
+  font: normal normal 20px/24px "Lato";
+
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
+  border: none;
+  width: 240px;
+  padding: 20px;
+  display: block;
+  &:hover {
+    background-color: #ffffff !important;
+    color: #4461d7;
+  }
+  @include breakpoint(mobile) {
+    width: 200px !important;
+    font: 500 16px/19px;
+  }
+}
+
+.logos-images {
+  display: flex;
+
+  justify-content: space-around;
+  margin: 60px 0px 60px 0px;
+
+  .flex-row {
+    justify-content: space-between;
+  }
+}
+ul {
+  list-style-type: none;
+}
+
+
+
+/********** Header ****************/
+.logo {
+  img {
+    margin: 0;
+  }
+}
+.flex-header {
+  display: flex;
+  align-items: center;
+}
+
+.site-header {
+  overflow: hidden;
+  padding: 15px 0px;
+  vertical-align: middle;
+}
+
+.btn-canvas-menu img:hover {
+  left: 330px;
+}
+
+.list {
+  margin: 8px 0px 0px 0px;
+
+  justify-content: space-around;
+  position: relative;
+}
+
+.site-menu {
+  margin-left: auto;
+  .primaryButton {
+    max-width: 212px;
+    padding: 15px 15px;
+    color: $white !important;
+    height: auto;
+    text-align: center;
+    font: 500;
+  }
+  .show {
+    display: block;
+  }
+
+  .navDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .navDropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .navDropdown-content {
+    .list-len {
+      padding: 0px;
+      display: none;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    @include breakpoint(ipad) {
+      display: block;
+      padding: 20px 20px;
+
+      .btn {
+        margin: 40px 0px 0px 0px;
+
+        border-bottom: none;
+        width: 250px;
+        text-align: center;
+      }
+    }
+    @include breakpoint(mobile) {
+      .down-arrow {
+        display: block;
+      }
+      display: block;
+      padding: 20px 20px;
+
+      .btn {
+        margin: 40px 0px 0px 0px;
+        border-bottom: none;
+        width: 250px;
+        text-align: center;
+      }
+    }
+    .down-arrow {
+      display: none;
+    }
+    li {
+      margin: 10px 0px 0px 0px;
+
+      position: relative;
+      margin: 0px 0px 0px 50px;
+
+      @include breakpoint(ipad) {
+        margin-left: 0px;
+        padding: 0px 0px 10px 0px;
+        border-bottom: 1px solid rgba(102, 100, 100, 0.549);
+      }
+      @include breakpoint(mobile) {
+        margin-left: 0px;
+        padding: 0px 0px 10px 0px;
+        border-bottom: 1px solid rgba(102, 100, 100, 0.549);
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+
+        font: normal 16px/140%;
+        color: #333333;
+
+        &:hover {
+          color: #4461d7 !important;
+        }
+        @include breakpoint(mobile) {
+
+          font: normal normal 14px/140% "Lato";
+        }
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #ffffff;
+    &.active {
+      display: block;
+    }
+  }
+  @include breakpoint(ipad) {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #ffffff;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+
+
+
+/*********************** journey section *******************************/
+.journey {
+  background-image: url("../images/inclined.svg");
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+  position: relative;
+
+  padding: 140px 0px 120px 0px;
+
+  background-color: #6754e2;
+  color: $white;
+  .title {
+    text-align: center;
+    h2 {
+      font: 500 normal 40px/130% "Lato";
+
+
+      align-items: center;
+      text-align: center;
+
+
+      margin: 0px;
+      margin: 0px 0px 20px 0px;
+
+      @include breakpoint(mobile) {
+        font: 500 normal 32px/140% "Lato";
+      }
+    }
+    p {
+      font: normal normal 22px/26px "Lato";
+
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      margin: 0px;
+      margin: 0px 0px 40px 0px;
+
+      @include breakpoint(mobile) {
+        font: normal normal 18px/140% "Lato";
+      }
+    }
+    .p {
+      margin: 0px;
+      @include breakpoint(mobile) {
+        font: normal normal 14px/17px "Lato";
+      }
+    }
+    div {
+      margin: 40px 0px 0px 0px;
+    }
+    .demo-btn {
+      margin: 40px 0px 0px 0px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        margin: 0px 0px 15px 0px;
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    padding: 80px 0px;
+  }
+}
+
+/************************** Footer ****************************/
+
+.site-footer {
+  position: relative;
+
+  background-color: $bg-footer;
+  padding: 120px 0px 30px 0px;
+  h3 {
+    margin: 0px;
+    font: normal normal 20px/24px "Lato";
+    letter-spacing: 0.005em;
+    color: #ffffff;
+    @include breakpoint(mobile) {
+      font: 500 normal 14px/140% "Lato";
+    }
+  }
+  h4 {
+    margin: 0px;
+    font: 500 normal 20px/24px "Lato";
+
+    letter-spacing: 0.005em;
+
+    color: #ffffff;
+    padding: 0px 0px 15px 0px;
+    @include breakpoint(mobile) {
+      font: 500 normal 14px/17px "Lato";
+    }
+  }
+  
+  .flex-col-left {
+    margin-left: auto;
+  }
+  .mobile-view {
+    display: none;
+    padding: 0px 0px 10px 0px;
+    .common i{
+      display: block;
+      width: 30px;
+      height:30px;
+      background: url("/assets/images/social-media-sprit.svg") center no-repeat;
+      @include breakpoint(mobile){
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .icon1{
+      background-position: 0px 0px !important;
+      
+    }
+    .icon2{
+      background-position: 5px -66px !important;
+  
+    }
+    .icon3{
+      background-position: -1px -126px !important;
+  
+    }
+    .icon4{
+      background-position: 2px -193px !important;
+  
+    }
+  }
+  .desktop-view{
+    .common i{
+      display: block;
+      width: 30px;
+      height:30px;
+      &:hover{
+
+        border: 1px solid #ffffff;
+        border-radius: 50px ;
+        padding: 5px;
+      }
+      background: url("/assets/images/social-media-sprit.svg") center no-repeat;
+      @include breakpoint(mobile){
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .icon1{
+      background-position: 8px 10px !important;
+      
+    }
+    .icon2{
+      background-position: 7px -58px !important;
+  
+    }
+    .icon3{
+      background-position: 7px -126px !important;
+  
+    }
+    .icon4{
+      background-position: 3px -192px !important;
+  
+    }
+  }
+  .footer-links {
+    margin-left: auto;
+    display: inline;
+    .footer-link {
+      @include breakpoint(mobile) {
+        padding: 0px 0px 0px 40px;
+      }
+    }
+    ul {
+      margin: 0px;
+      padding: 0px 0px 10px 0px;
+
+      li {
+        line-height: 45px;
+        a {
+          margin: 0px;
+          text-decoration: none;
+          font: normal normal 18px/140% "Lato";
+          color: #ffffff;
+          opacity: 0.8;
+          @include breakpoint(mobile) {
+            font: normal normal 12px/140% "Lato";
+          }
+        }
+      }
+    }
+    @include breakpoint(mobile) {
+      margin-left: 0px;
+    }
+  }
+  @include breakpoint(mobile) {
+    padding: 80px 0px 20px 0px;
+  }
+
+  .links {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px !important;
+
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    @include breakpoint(mobile) {
+      display: flex;
+      width: 95vw !important;
+    }
+
+    li {
+      line-height: 45px;
+      a {
+        margin: 0px;
+        text-decoration: none;
+        color: $white;
+        @include breakpoint(mobile) {
+          font: normal normal 12px/140% "Lato";
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .mobile-copyright {
+    display: none !important;
+  }
+
+  .button-footer {
+    margin: 20px 0px 0px 0px;
+
+    border-radius: 0% !important;
+    background-color: $white !important;
+
+    border: none;
+    width: 121px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font: normal normal 20px/24px  "Lato";
+    letter-spacing: 0.005em;
+    color: #4461d7;
+    &:hover {
+      background-color: #5a5b5f95 !important;
+    }
+    @include breakpoint(mobile) {
+      width: 100px;
+      font: normal normal 16px/19px "Lato";
+    }
+  }
+  @include breakpoint(mobile) {
+    .flex-col-2 {
+      max-width: 50% !important;
+    }
+    .desktop-view {
+      display: none;
+    }
+  }
+  .follow-on-icons {
+    margin: 20px 0px 0px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 224px;
+  }
+  .footer-copyright {
+    margin: 20px 0px 0px 0px;
+
+    display: flex;
+    align-items: center;
+    .copy-right {
+      @include breakpoint(mobile) {
+        display: none !important;
+      }
+    }
+    div {
+      font: normal normal 16px/140% "Lato";
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+
+      opacity: 0.8;
+      @include breakpoint(mobile) {
+        font: normal normal 12px/14px "Lato";
+
+        letter-spacing: 0.005em;
+      }
+    }
+    ul {
+      li {
+        margin: 0px 20px 0px 0px;
+        font: normal normal 16px/140% "Lato";
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+
+        opacity: 0.8;
+        position: relative;
+      }
+    }
+  }
+
+  @include breakpoint(mobile) {
+    .mobile-copyright {
+      display: block !important;
+    }
+    .flex-row {
+      display: flex;
+      .flex-col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 100%;
+        min-height: 1px;
+        position: relative;
+      }
+    }
+    .footer-copyright {
+      display: flex;
+      align-items: center;
+      ul {
+        li {
+          margin: 0px 20px 0px 0px;
+
+          position: relative;
+          @include breakpoint(mobile) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .btn-canvas-menu {
+      display: inline-block;
+      right: 0;
+      position: absolute;
+    }
+    .site-menu {
+      display: none;
+    }
+    .follow-on-icons img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 10px;
+    }
+    .mobile-view {
+      display: block;
+      margin: 40px 0px 0px 0px;
+
+      .follow-on-icons {
+        padding: 0px 0px 0px 40px;
+        .flex-col-2 {
+          flex: 0 0 40% !important;
+        }
+        text-align: left;
+        a {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
+
+.btn-site-menu {
+  display: none;
+  width: 25px;
+  background-color: transparent;
+  border: 0;
+  outline: 0 !important;
+  padding: 0;
+  margin-left: auto;
+  span {
+    display: block;
+    height: 3px;
+    margin: 5px 0px;
+    border-radius: 4px;
+    background-color: #333333;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .btn-site-menu.close .middle,
+  .btn-site-menu.close .bottom {
+    transform: rotate(-45deg);
+  }
+  &.active {
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(1) {
+      transform: rotate(45deg);
+      margin: 0px;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg);
+      margin: 0px;
+      bottom: 2px;
+      position: relative;
+    }
+  }
+  @include breakpoint(mobile) {
+    display: inline-block;
+  }
+  @include breakpoint(ipad) {
+    display: inline-block;
+  }
+}

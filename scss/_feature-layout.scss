@@ -1,0 +1,323 @@
+
+
+/**************** Side Header *****************************/
+
+.site-header {
+  .primaryButton {
+    @include breakpoint(mobile) {
+      width: 146px !important;
+    }
+  }
+}
+
+/*************** Feature Hero Section **********************/
+
+.hero-feature {
+  padding-top: 60px;
+  margin-bottom: 120px;
+  @include breakpoint(mobile) {
+    margin-bottom: 80px;
+    padding-top: 40px;
+  }
+  position: relative;
+  .flex-row {
+    align-items: center;
+  }
+  
+
+  h1 {
+    font: 500 normal 44px/130% "Lato";
+    margin-top: 0px;
+
+    @include breakpoint(mobile) {
+      font: 500 normal 38px/140% "Lato";
+    }
+  }
+  p {
+    font: normal normal 22px/26px "Lato";
+    color: #5e6373;
+    padding-bottom: 30px;
+    @include breakpoint(mobile) {
+      font: normal normal 18px/130% "Lato";
+    }
+  }
+  .hero-content {
+    max-width: 502px;
+  }
+  .primaryButton {
+      text-decoration: none;
+      padding: 20px 60px;
+    @include breakpoint(mobile) {
+      width: 212px !important;
+    }
+  }
+
+  .hero-triangle {
+    background: url("/assets/images/feature-triangle.svg");
+    position: absolute;
+    left: 0;
+    // bottom: -100px;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    bottom: -160px;
+    background-repeat: no-repeat;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .hero-feature-img {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+
+/************ Loop Section **********************/
+
+.home-feature {
+  margin-top: 60px;
+  position: relative;
+  h3 {
+    margin-top: 0px;
+
+    font: 500 normal 36px/130% "Lato";
+  }
+
+  .item {
+    padding: 120px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include breakpoint(mobile) {
+      padding: 80px 0px;
+    }
+    .adible {
+      padding-left: 80px;
+    }
+
+    .content {
+      display: block;
+
+      @include breakpoint(mobile) {
+        padding-left: 0 !important;
+      }
+    }
+    h3 {
+      font: 500 normal 36px/130% "Lato";
+      @include breakpoint(mobile) {
+        margin-bottom: 20px;
+
+        margin-top: 30px;
+        font: 500 normal 28px/42px "Lato";
+      }
+    }
+    p {
+      max-width: 465px;
+
+      font: normal normal 20px/140% "Lato";
+      margin-bottom: 0px;
+      color: #5e6373;
+      @include breakpoint(mobile) {
+        font: normal normal 16px/140% "Lato";
+      }
+      a {
+        font: 500 normal 18px/22px "Lato";
+
+        text-decoration-line: underline;
+
+        /* #4461D7 */
+
+        color: #4461d7;
+        @include breakpoint(mobile) {
+          font: 500 normal 14px/17px "Lato";
+        }
+      }
+    }
+    .img {
+      max-width: 100%;
+      padding-right: 30px;
+      @include breakpoint(mobile) {
+        padding: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    &:nth-child(even) {
+      .flex-row .flex-col-2 {
+        &:first-child {
+          order: 2;
+          @include breakpoint(mobile) {
+            order: inherit;
+          }
+        }
+      }
+    }
+    &:nth-child(3n) {
+      background: white;
+      
+    }
+
+    &:nth-child(3n-1) {
+      background: white;
+    }
+    &:nth-child(3n-2) {
+      background: #f5f7fa;
+    }
+    .flex-row {
+      align-items: center;
+    }
+  }
+  @include breakpoint(mobile) {
+    .item {
+      padding: 80px 0px;
+    }
+  }
+  .sheet-triangle {
+    background: url("/assets/images/feature-triangle.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: -11px;
+    z-index: 1;
+    padding-right: 30px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .project-triangle {
+    background: url("/assets/images/feature-triangle.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -58px;
+    z-index: 1;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .feature-integrate-triangle {
+    background: url("/assets/images/triangle.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: -27px;
+    z-index: 1;
+    padding-right: 30px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+
+  .time-circle {
+    // content: " ";
+    background: url("/assets/images/feature-circle.svg") no-repeat;
+    width: 183.05px;
+    height: 180.9px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: -30px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+
+  .pay-circle {
+    background: url("/assets/images/feature-circle.svg");
+    width: 182.98px;
+    height: 170px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: -39px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .project-circle {
+    background: url("/assets/images/feature-circle.svg");
+    width: 182.98px;
+    height: 170px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: -51px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .offline-circle {
+    background: url("/assets/images/feature-circle.svg");
+    width: 191px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    bottom: -52px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .summary-dot {
+    background: url("/assets/images/summary-dot.svg") no-repeat;
+    width: 137px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    bottom: -70px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .geo-dot {
+    background: url("/assets/images/summary-dot.svg") no-repeat;
+    width: 137px;
+    height: 140px;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    bottom: 166px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .img-rel {
+    position: relative;
+  }
+  .blue-dot {
+    position: absolute;
+    right: -8px;
+
+    top: -2px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .arrow {
+    vertical-align: middle;
+  }
+}
+.feature-dot {
+  background: url(/assets/images/dots3.svg);
+  width: 138px;
+  height: 139px;
+  position: absolute;
+  bottom: -91px;
+  padding: 0px 0px 0px 50px;
+  z-index: 100;
+  left: 30px;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+/******************* Journey Section *******************/
+
+.journey-title {
+  color: white !important;
+}

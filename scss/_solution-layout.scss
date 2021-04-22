@@ -1,0 +1,278 @@
+
+
+/**************** Side Header *****************************/
+
+.site-header {
+  .primaryButton {
+    @include breakpoint(mobile) {
+      width: 146px !important;
+    }
+  }
+}
+
+/*************** Feature Hero Section **********************/
+
+.hero-solution {
+  padding-top: 60px;
+  margin-bottom: 120px;
+  @include breakpoint(mobile) {
+    margin-bottom: 80px;
+    padding-top: 40px;
+  }
+  position: relative;
+  .flex-row {
+    align-items: center;
+  }
+
+  h1 {
+    font: 500 normal 38px/140% "lato";
+
+    margin-top: 0px;
+    @include breakpoint(mobile) {
+      font: 500 normal 38px/140% "Lato";
+    }
+  }
+  p {
+    font: normal normal 22px/26px "Lato";
+
+    color: #5e6373;
+    padding-bottom: 30px;
+    @include breakpoint(mobile) {
+      font: normal normal 18px/140% "Lato";
+    }
+  }
+  .hero-content {
+    max-width: 502px;
+  }
+  .primaryButton {
+    text-decoration: none;
+    padding: 20px 60px;
+    @include breakpoint(mobile) {
+      width: 212px !important;
+    }
+  }
+
+  .hero-triangle {
+    background: url("/assets/images/triangle.svg");
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -168px;
+    z-index: 1;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .hero-solution-img {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+
+/************ Loop Section **********************/
+
+.home-solution {
+  margin-top: 60px;
+  position: relative;
+  h3 {
+    margin-top: 0px;
+
+    font: normal normal 36px/130% "Lato";
+  }
+
+  .item {
+    padding: 120px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include breakpoint(mobile) {
+      padding: 80px 0px;
+    }
+    .adible {
+      padding-left: 80px;
+    }
+
+    .content {
+      display: block;
+
+      @include breakpoint(mobile) {
+        padding-left: 0 !important;
+      }
+    }
+    h3 {
+      font: 500 normal 36px/130% "Lato";
+      @include breakpoint(mobile) {
+        margin-bottom: 20px;
+
+        font: 500 normal 28px/42px "Lato";
+
+        margin-top: 30px;
+      }
+    }
+    p {
+      max-width: 465px;
+
+      font: normal normal 20px/140% "Lato";
+      margin-bottom: 0px;
+      color: #5e6373;
+      @include breakpoint(mobile) {
+        font: normal normal 16px/140% "Lato";
+      }
+      a {
+        font: 500 normal 18px/22px "Lato";
+        text-decoration-line: underline;
+        color: #4461d7;
+        @include breakpoint(mobile) {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    .img {
+      max-width: 100%;
+      padding-right: 30px;
+      @include breakpoint(mobile) {
+        padding: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .img-rel {
+      position: relative;
+    }
+
+    &:nth-child(even) {
+      .flex-row .flex-col-2 {
+        &:first-child {
+          order: 2;
+          @include breakpoint(mobile) {
+            order: inherit;
+          }
+        }
+      }
+    }
+    &:nth-child(3n) {
+      background: white;
+    }
+
+    &:nth-child(3n-1) {
+      background: white;
+    }
+    &:nth-child(3n-2) {
+      background: #f5f7fa;
+    }
+    .flex-row {
+      align-items: center;
+    }
+  }
+  .dot {
+    background: url("/assets/images/dot-solution.svg") no-repeat;
+    width: 138px;
+    height: 187px;
+
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    bottom: -105px;
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  .p-circle {
+    background: url(/assets/images/pink-circle.svg) no-repeat;
+    width: 183px;
+    height: 174px;
+    position: absolute;
+    left: -25px;
+    z-index: 1;
+    bottom: -55px;
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  .pink-circle {
+    background: url(/assets/images/pink-circle.svg) no-repeat;
+    width: 191px;
+    height: 171px;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    bottom: -76px;
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  .circle {
+    background: url(/assets/images/feature-circle.svg) no-repeat;
+    width: 222px;
+    height: 172px;
+    position: absolute;
+    right: -57px;
+    z-index: 1;
+    bottom: 55px;
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  .blue-dot {
+    position: absolute;
+    right: -8px;
+
+    top: -2px;
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  .last-triangle {
+    background: url("/assets/images/feature-triangle.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    padding-right: 80px;
+    bottom: -112px;
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  .triangle {
+    background: url("/assets/images/feature-triangle.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    bottom: -61px;
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  @include breakpoint(ipad) {
+    .item {
+      padding: 80px 0px;
+    }
+  }
+  .arrow {
+    vertical-align: middle;
+  }
+}
+.solution-dot {
+  background: url(/assets/images/dots3.svg);
+  width: 138px;
+  height: 139px;
+  position: absolute;
+  bottom: -91px;
+  padding: 0px 0px 0px 50px;
+  z-index: 100;
+  left: 30px;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+/******************* Journey Section *******************/
+
+.journey-title {
+  color: white !important;
+}

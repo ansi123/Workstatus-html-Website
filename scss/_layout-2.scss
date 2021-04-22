@@ -1,0 +1,772 @@
+
+/*************** Hero section *****************/
+.about-hero-section {
+  position: relative;
+
+  padding: 40px 0px 240px 0px;
+
+  @include breakpoint(mobile) {
+    padding: 50px 0px 200px 0px;
+  }
+
+  .flex-row {
+    align-items: center;
+  }
+  .hero-img {
+    max-width: 414px;
+  }
+  .flex-col-2 .img {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+
+  .dot-9 {
+    position: absolute;
+    right: 0;
+    background: url("/assets/images/dots\ 9.svg");
+
+    top: 65px;
+    right: 0;
+    width: 130px;
+    height: 139px;
+    position: absolute;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .dot-9::after {
+    content: " ";
+  }
+  .triangle {
+    background: url("/assets/images/tri.png");
+    width: 61px;
+    height: 61px;
+    left: 320px;
+    position: absolute;
+    top: 25px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .triangle::after {
+    content: " ";
+  }
+  .Vector {
+    background: url("/assets/images/Vector.svg");
+    width: 39.36px;
+    height: 39.25px;
+    right: 422px;
+    position: absolute;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .Vector::after {
+    content: " ";
+  }
+  h1 {
+    font: 500 normal 44px/130% "Lato";
+    text-align: center;
+
+    color: #333333;
+    @include breakpoint(mobile) {
+      width: 243px;
+      height: 90px;
+
+      margin: auto;
+
+      font-size: 38px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .p-intro {
+    width: 732px;
+    height: 78px;
+    top: 80px;
+
+    font: normal normal 22px/26px "Lato";
+
+    color: #5e6373;
+    text-align: center;
+    margin: auto;
+    @include breakpoint(mobile) {
+      width: 299px;
+      height: 152px;
+
+      margin: auto;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .Rectangle {
+    background: url("/assets/images/Rectangle\ 4706.svg");
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 60px;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .Rectangle::after {
+    content: " ";
+  }
+  .about-vedio-img {
+    padding: 40px 0px 0px 0px;
+    @include breakpoint(mobile) {
+      padding: 0 0 0 0;
+    }
+    .up-video-img {
+      margin: 0px 0px 0px 40px;
+      height: 19px;
+      background-repeat: no-repeat;
+      background: url("/assets/images/Group\ 9755.svg") no-repeat;
+      @include breakpoint(mobile) {
+        display: none;
+      }
+    }
+
+    .video-img {
+      position: absolute;
+      width: 1087px;
+      margin: 0px;
+      box-sizing: border-box;
+      padding: 0px 23px 0px 23px;
+      @include breakpoint(mobile) {
+        text-align: center;
+        position: absolute;
+        right: 0vh;
+
+        padding: 50px 0px 20px 0px;
+        margin: 40px 0px 0px 0px;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 20px;
+    color: #5e6373;
+    padding: 0px 0px 20px 0px;
+  }
+}
+
+/************************* About approach section  ********************************/
+
+.about-approach-section {
+  padding: 250px 0px 0px 0px;
+  background-color: #f5f7fa;
+  @include breakpoint(mobile) {
+    padding: 0px 0px 0px 0px;
+  }
+  .total-content {
+    padding: 80px 0px 0px 0px;
+    @include breakpoint(mobile) {
+      padding: 120px 0px 0px 0px;
+    }
+    .content {
+      padding: 65px 0px 0px 100px;
+      h3 {
+        color: #333333;
+
+        font: 500 normal 36px "Lato";
+
+        @include breakpoint(mobile) {
+          font-size: 28px;
+        }
+      }
+      p {
+        color: #5e6373;
+        padding: 0px 0px 20px 0px;
+
+        font: normal normal 20px "Lato";
+
+        @include breakpoint(mobile) {
+          font-size: 16px;
+        }
+      }
+      @include breakpoint(mobile) {
+        padding: 25px;
+      }
+    }
+  }
+}
+
+/******* .major-integration-section ******/
+
+.majorr-integration-section {
+  position: relative;
+  margin: auto;
+  padding: 80px 0px 40px 0px;
+  background: #f5f7fa;
+  .logos-images {
+    justify-content: center;
+    .flex-col-6 {
+      margin: 0px 0px 10px 0px;
+    }
+    .common {
+      im {
+        display: block;
+        text-align: center;
+        width: 187px;
+        background: #ffffff;
+        box-shadow: 0px 0px 10px rgba(22, 101, 216, 0.1);
+        border-radius: 4px;
+        height: 140px;
+        &:hover {
+          background-color: #ffffff;
+        }
+        background: url("/assets/images/major-sprite.svg") center no-repeat;
+        @include breakpoint(mobile) {
+          width: 120px;
+          height: 70px;
+        }
+      }
+    }
+    .icon1 {
+      background-position: 43px 50px !important;
+      @include breakpoint(mobile) {
+        background-position: 18px 21px !important;
+      }
+    }
+    .icon2 {
+      background-position: 48px -39px !important;
+      @include breakpoint(mobile) {
+        background-position: 20px -67px !important;
+      }
+    }
+    .icon3 {
+      background-position: 42px -138px !important;
+      @include breakpoint(mobile) {
+        background-position: 18px -166px !important;
+      }
+    }
+    .icon4 {
+      background-position: 45px -247px !important;
+      @include breakpoint(mobile) {
+        background-position: 18px -277px !important;
+      }
+    }
+    .icon5 {
+      background-position: 44px -357px !important;
+      @include breakpoint(mobile) {
+        background-position: 18px -382px !important;
+      }
+    }
+    .icon6 {
+      background-position: 39px -473px !important;
+      @include breakpoint(mobile) {
+        background-position: 18px -501px !important;
+      }
+    }
+  }
+  .content {
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-title {
+    h3 {
+      color: #333333;
+      margin: auto;
+      text-align: center;
+      width: 719px;
+
+      height: 94px;
+      font: 500 normal 36px/130% "Lato";
+      padding: 0 0 40px 0;
+      @include breakpoint(mobile) {
+        width: 319px;
+        height: 164px;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .joining-btn {
+      margin: 40px 0px 0px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+
+    .img {
+      text-align: right;
+    }
+
+    p {
+      color: #5e6373;
+    }
+  }
+  
+
+  .group {
+    width: 152px;
+    height: 230px;
+    background: url("/assets/images/Group\ \(1\).svg");
+    margin: -200px 0px 0px 50px;
+    position: absolute;
+    right: 0;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+
+//****** about-our-connection  *****//
+
+.about-our-connection {
+  padding: 40px 0px 0px 0px;
+  background-color: #051441;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  @include breakpoint(mobile) {
+    width: 520px;
+    height: 1050px;
+    padding: 20px 0px 0px 0px;
+  }
+  .earth {
+    @include breakpoint(mobile) {
+      position: absolute;
+      height: 65%;
+      max-width: none;
+      vertical-align: unset;
+      right: -146px;
+      top: 375px;
+    }
+    background: url("/assets/images/image\ 44.svg");
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 740px;
+    width: 1000px;
+  }
+
+  .content {
+    padding: 70px 0px 0px 0px;
+    h1 {
+      position: absolute;
+      width: 226px;
+      height: 27px;
+
+      font: 500 normal 20px/130% "Lato";
+
+      color: #4461d7;
+      @include breakpoint(mobile) {
+        font-size: 14px;
+      }
+    }
+    h3 {
+      position: absolute;
+      width: 468px;
+      height: 92px;
+      padding: 20px 0px 0px 0px;
+
+      font: 500 normal 36px/130% "Lato";
+
+      color: #ffffff;
+      @include breakpoint(mobile) {
+        font-size: 28px;
+        width: 270px;
+        height: 105px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    p {
+      width: 468px;
+      height: 133px;
+      padding: 140px 0px 0px 0px;
+
+      font: normal normal 18px/140% "Lato";
+
+      color: #ffffff;
+      @include breakpoint(mobile) {
+        font-size: 16px;
+        width: 320px;
+        height: 161px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .about-all {
+    padding: 40px 0px 0px 0px;
+    .contentg {
+      i {
+        width: 100%;
+        height: 40px;
+        background: url("/assets/images/Group\ 9788.png") center no-repeat;
+        display: block;
+        @include breakpoint(mobile) {
+          width: 26px;
+          height: 26px;
+        }
+
+      }
+      .icon1 {
+        background-position: -2px 0;
+        @include breakpoint(mobile) {
+          background-position: -2px 0;
+          padding: 20px 16px 13px 0;
+         
+        }
+      }
+      .icon2 {
+        background-position: -2px -91px;
+        @include breakpoint(mobile) {
+          background-position: -2px -91px;
+          padding: 20px 16px 13px 0;
+         
+        }
+      }
+      .icon3 {
+        background-position: -2px -170px;
+        @include breakpoint(mobile) {
+          background-position: -2px -170px;
+          padding: 20px 16px 13px 0;
+         
+
+        }
+      }
+      .icon4 {
+        background-position: -2px -247px;
+        @include breakpoint(mobile) {
+          background-position: -2px -247px;
+          padding: 20px 16px 13px 0;
+         
+
+        }
+      }
+    }
+    h5 {
+      position: absolute;
+      width: 113px;
+      height: 36px;
+      top: 0px;
+
+      font: bold normal 40px/20px "Lato";
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.15px;
+
+      color: #ffffff;
+      @include breakpoint(mobile) {
+        display: inline-flex;
+        top: -45px;
+        left: 50px;
+        font-size: 24px;
+      }
+    }
+  }
+  .p-item {
+    position: relative;
+    width: 226px;
+    height: 50px;
+    top: 48px;
+
+    font: normal normal 18px/140% "Lato";
+
+    color: #ffffff;
+
+    opacity: 0.9;
+    @include breakpoint(mobile) {
+      top: -5px;
+
+      margin: 0px 0px 50px 0px;
+      font-size: 14px;
+      width: 177px;
+      height: 40px;
+    }
+  }
+}
+
+/******* about-great-people ******/
+
+.about-great-people {
+  padding: 120px 0px 0px 0px;
+  @include breakpoint(mobile) {
+    padding: 40px 0px 0px 0px;
+  }
+  .content {
+    h3 {
+      font: 500 normal 36px "Lato";
+
+      color: #333333;
+      @include breakpoint(mobile) {
+        font-size: 28px;
+      }
+    }
+    .inner-content {
+      .inline-content {
+        display: inline-flex;
+        i {
+          margin: 5px 7px;
+          width: 18px;
+          height: 19px;
+          background-image: url("/assets/images/sprite_Tick\ \(1\).png");
+          display: block;
+          @include breakpoint(mobile) {
+            width: 18px;
+            height: 19px;
+            margin: -0.1px 0 0 0;
+          }
+        }
+        .tick1 {
+          background-position: -34px -23px;
+        }
+        .tick2 {
+          background-position: -34px -23px;
+        }
+        .tick3 {
+          background-position: -34px -23px;
+        }
+        h5 {
+          width: 131px;
+          height: 29px;
+          margin: 0;
+
+          font: 500 normal 24px/29px "Lato";
+
+          color: #333333;
+          @include breakpoint(mobile) {
+            font-size: 20px;
+            width: 110px;
+            height: 24px;
+            margin: -5% 0 0 10px;
+          }
+        }
+      }
+
+      p {
+        width: 475px;
+        height: 50px;
+
+        font: normal normal 18px/140% "Lato";
+
+        margin: 0;
+
+        padding: 10px 0px 10px 10px;
+
+        color: #5e6373;
+        @include breakpoint(mobile) {
+          font-size: 14px;
+          width: 319px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+/********about-growth-section*******/
+.about-growth-section {
+  padding: 120px 0px 0px 0px;
+
+  @include breakpoint(mobile) {
+    padding: 40px 0px 0px 0px;
+  }
+  .flex-rowg {
+    display: flex !important;
+    text-align: center;
+    @include breakpoint(mobile) {
+      display: flex !important;
+      margin: 0px 0px 0px -20px;
+
+    }
+  }
+  .flex-col-2 {
+    @include breakpoint(mobile) {
+      flex-basis: 50vw;
+    }
+  }
+  .content {
+    h3 {
+      font: 500 normal 36px/130% "Lato";
+
+      color: #333333;
+      @include breakpoint(mobile) {
+        font-size: 28px;
+      }
+    }
+    p {
+      font: normal normal 20px "Lato";
+
+
+      width: 486px;
+      height: 84px;
+
+      color: #5e6373;
+      @include breakpoint(mobile) {
+        font-size: 18px;
+
+        max-width: 94vw;
+      }
+    }
+  }
+  .br-r {
+    border-right: 1px solid rgb(219, 206, 206);
+    @include breakpoint(mobile) {
+      padding: 0px;
+    }
+  }
+  .revenue {
+    h5 {
+      font: normal normal 20px "Lato";
+
+      text-align: center;
+      letter-spacing: 0.15px;
+
+      color: #4461d7;
+      @include breakpoint(mobile) {
+        font-size: 16px;
+        width: 139px;
+        height: 44px;
+        margin: 0px 0px 0px 20px;
+      }
+    }
+    h4 {
+      font: normal normal 44px "Lato";
+
+      text-align: center;
+      letter-spacing: 0.15px;
+
+      color: #333333;
+      @include breakpoint(mobile) {
+        font-size: 34px;
+      }
+    }
+  }
+  hr {
+    width: 150px;
+    height: 0px;
+    left: 24vh;
+    position: absolute;
+    opacity: 0.2;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+    top: 8vh;
+    color: #000000;
+    @include breakpoint(mobile) {
+      left: 15vh;
+      top: 14vh;
+      width: 120px;
+    }
+  }
+  .vector {
+    margin: 0px 0px 0px 45px;
+    @include breakpoint(mobile) {
+      width: 500px;
+      margin-left: 0px;
+    }
+    i {
+      width: 16px;
+      height: 14px;
+      display: block;
+      background: url("/assets/images/vec31_img.png");
+    }
+    .Vec31 {
+      background-position: -17px -18px;
+      vertical-align: middle;
+      position: absolute;
+      margin: 3px 0px 0px 110px;
+      @include breakpoint(mobile) {
+        margin: 3px 0px 0px 40px;
+      }
+    }
+    text-align: center;
+    .img1 {
+      margin: 0px 11px;
+      vertical-align: middle;
+    }
+    h5 {
+      position: absolute;
+
+      font: normal normal "Lato";
+
+      letter-spacing: 0.15px;
+
+      color: #4461d7;
+      @include breakpoint(mobile) {
+        width: 57px;
+        height: 23px;
+        font-size: 16px;
+      }
+    }
+    p {
+      font: normal normal 18px "Lato";
+
+      text-align: center;
+      letter-spacing: 0.15px;
+      @include breakpoint(mobile) {
+        font-size: 16px;
+        width: 100vw;
+      }
+      .vec {
+        color: #4461d7;
+        padding: 0px 15px 0px 0px;
+      }
+    }
+  }
+
+  .dots3 {
+    position: relative;
+    background: url("/assets/images/dots3.svg") no-repeat;
+    padding: 0px 0px 0px 50px;
+    top: 140px;
+    margin: 0 0 0 50px;
+    height: 188px;
+    z-index: 1;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .dots3::before {
+    content: " ";
+  }
+}
+
+/************************* About world connection section  ********************************/
+
+.about-world-connection {
+  padding: 40px 0px 0px 0px;
+}
+
+/************************* About journey section  ********************************/
+
+.journey {
+  i {
+    width: 80px;
+    height: 80px;
+    background: url("/assets/images/triangle.svg");
+  }
+  .journey-triangle {
+    right: 0;
+    position: absolute;
+    background-position: 0 0;
+    padding: 0px 34px 0px 0px;
+    top: 37px;
+    background-repeat: no-repeat;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}

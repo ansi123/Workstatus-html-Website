@@ -1,0 +1,413 @@
+/**************** Side Header *****************************/
+
+.site-header {
+  .primaryButton {
+    @include breakpoint(mobile) {
+      width: 146px !important;
+    }
+  }
+}
+
+/*************** Feature Hero Section **********************/
+
+.hero-industry {
+  padding-top: 60px;
+  margin-bottom: 120px;
+  @include breakpoint(mobile) {
+    margin-bottom: 80px;
+    padding-top: 40px;
+  }
+  position: relative;
+  .flex-row {
+    align-items: center;
+  }
+
+  h1 {
+    margin-top: 0px;
+    font: 500 normal 44px/130% "Lato";
+    @include breakpoint(mobile) {
+      font: 500 normal 38px/140% "Lato";
+      display: flex;
+      align-items: center;
+    }
+  }
+  p {
+    font: normal normal 22px/26px "Lato";
+    color: #5e6373;
+    padding-bottom: 30px;
+    @include breakpoint(mobile) {
+      font: normal normal 18px/140% "Lato";
+    }
+  }
+  .hero-content {
+    max-width: 502px;
+  }
+  .primaryButton {
+    text-decoration: none;
+    padding: 20px 60px;
+    @include breakpoint(mobile) {
+      width: 212px !important;
+    }
+  }
+  .hero-solution-img{
+    @include breakpoint(mobile)
+    {
+      display: none;
+    }
+  }
+  .hero-industry-triangle {
+    background: url("/assets/images/triangle.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -168px;
+    z-index: 1;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+
+/********************* tracker-time section ***************************/
+
+.tracker-industry {
+  margin: 40px 0px 0px 0px;
+
+  position: relative;
+  .timetracker-img{
+    margin: 0 0 0 -11px;
+  }
+  .item {
+    padding: 120px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include breakpoint(mobile) {
+      padding: 80px 0px;
+    }
+
+    .content {
+      padding: 50px 0px 20px 50px !important;
+
+      max-width: 502px;
+
+      @include breakpoint(mobile) {
+        padding-left: 0 !important;
+      }
+    }
+    h3 {
+      font: 500 normal 36px/130% "Lato";
+      margin: 20px 0px;
+
+      @include breakpoint(mobile) {
+        max-width: 300px;
+
+        margin: 0px 0px 20px 0px;
+        font: 500 normal 28px/140% "Lato";
+        display: flex;
+        align-items: center;
+      }
+    }
+    p {
+      font: normal normal 18px/140% "Lato";
+      margin: 0px;
+      width: 497px;
+      color: #5e6373;
+      @include breakpoint(mobile) {
+        font: normal normal 16px/140% "Lato";
+        display: flex;
+        max-width: 330px;
+
+        align-items: center;
+      }
+    }
+    h5 {
+      font: 500 normal 24px/29px "Lato";
+      margin: 20px 0px;
+      @include breakpoint(mobile) {
+        margin: 20px 0px 20px 0px;
+        font: 500 normal 20px/140% "Lato";
+        max-width: 300px;
+      }
+    }
+    .img {
+      max-width: 100%;
+      padding: 0px 30px 0px 0px;
+      @include breakpoint(mobile) {
+        padding: 0;
+        margin: 0px 0px 20px 0px;
+      }
+    }
+
+   
+    .flex-row {
+      align-items: center;
+    }
+  }
+  @include breakpoint(mobile) {
+    .item {
+      padding: 80px 0px;
+    }
+  }
+}
+
+/***************** Industry Integrated Section ******************/
+.industry-integrated-section {
+  position: relative;
+
+  padding: 80px 0px;
+  background-color: #051441;
+  color: $white;
+  .all-tracking-icons {
+    padding: 40px 0px 0px 40px;
+    @include breakpoint(mobile)
+    {
+      padding: 40px 0 0 0;
+    }
+  }
+  ig {
+    display: block;
+
+    width: 60px;
+    height: 60px;
+    background: url("/assets/images/indusry_i1\ \(2\).png") center no-repeat;
+
+    @include breakpoint(mobile) {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      justify-content: center;
+      max-width: 300px;
+    }
+  }
+  .icon1 {
+    background-position: -291px -60px;
+    @include breakpoint(mobile) {
+      background-position: -291px -60px;
+      // margin: auto;
+       margin: 50px auto auto auto;
+    }
+  }
+  .icon2 {
+    background-position: -291px -217px;
+    @include breakpoint(mobile) {
+      background-position: -291px -217px;
+      margin: 50px auto auto auto;
+
+    }
+  }
+  .icon3 {
+    background-position: -291px -380px;
+    @include breakpoint(mobile) {
+      background-position: -291px -380px;
+      margin: 50px auto auto auto;
+
+    }
+  }
+  im {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("/assets/images/indusry_i2.png") center no-repeat;
+    @include breakpoint(mobile) {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      justify-content: center;
+      max-width: 300px;
+      margin: 50px 0 0 0;
+
+    }
+  }
+  .icon4 {
+    background-position: -298px -54px;
+    @include breakpoint(mobile) {
+      background-position: -298px -54px;
+      margin: 50px auto auto auto;
+
+    }
+  }
+  .icon5 {
+    background-position: -300px -207px;
+    @include breakpoint(mobile) {
+      background-position: -300px -207px;
+      margin: 50px auto auto auto;
+
+    }
+  }
+
+  .icon6 {
+    background-position: -306px -371px;
+    @include breakpoint(mobile) {
+      background-position: -306px -371px;
+      margin: 50px auto auto auto;
+
+    }
+  }
+  
+  .content {
+    text-align: center;
+    h3 {
+      text-align: center;
+      font: 500 normal 36px/130% "Lato";
+      @include breakpoint(mobile) {
+        font: 500 normal 28px/140% "Lato";
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
+        // margin: auto;
+        margin-top: 0;
+      }
+    }
+    p {
+      font: normal normal 18px/140% "Lato";
+      text-align: center;
+      width: 950px;
+      height: 52px;
+      margin: auto;
+      color: #ffffff;
+      @include breakpoint(mobile) {
+        font: normal normal 16px/140% "Lato";
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
+        padding: 40px 0px;
+      }
+    }
+  }
+  .contentt {
+    padding: 20px 0px 0px 0px;
+    h5 {
+      font: 500 normal 24px/29px "Lato";
+      padding: 0px;
+      margin: 20px 0px 15px 0px;
+      @include breakpoint(mobile) {
+        font: 500 normal 28px/140% "Lato";
+        align-items: center;
+        text-align: center;
+      }
+    }
+    .p1 {
+      width: 297px;
+      height: 78px;
+
+      color: #fafafe;
+      font: normal normal 18px/140% "Lato";
+      @include breakpoint(mobile) {
+        font: normal normal 16px/140% "Lato";
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 319px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+/****************** Tracker Section *******************/
+
+.tracker-device-section {
+  padding: 120px 0px 0px 0px;
+  margin: 0 0 -100px 0;
+  @include breakpoint(mobile) {
+    margin-bottom: 80px;
+    padding-top: 40px;
+  }
+  position: relative;
+  .flex-row {
+    align-items: center;
+  }
+
+  .flex-row .flex-col-2 {
+    &:first-child {
+      order: 2;
+      @include breakpoint(mobile) {
+        order: inherit;
+      }
+    }
+  }
+  h3 {
+    margin-top: 0px;
+    font: 500 normal 36px/46.8px "Lato";
+    @include breakpoint(mobile) {
+      font: 500 normal 28px/140% "Lato";
+    }
+  }
+  p {
+    width: 466px;
+    height: 175px;
+    font: normal normal 20px/140% "Lato";
+    color: #5e6373;
+    padding-bottom: 30px;
+    @include breakpoint(mobile) {
+      font: normal normal 16px/140% "Lato";
+      display: flex;
+      max-width: 300px;
+      align-items: center;
+    }
+  }
+  .hero-content {
+    max-width: 502px;
+  }
+  .primaryButton {
+    @include breakpoint(mobile) {
+      width: 212px !important;
+    }
+  }
+
+  .hero-industry-triangle {
+    background: url("/assets/images/industry_triangle.svg");
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -168px;
+    z-index: 1;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .hero-solution-img {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+.tracker-dot {
+  position: relative;
+  background: url("/assets/images/dots3.svg") no-repeat;
+  padding: 0px 0px 0px 50px;
+  top: 41px;
+  margin: 0 0 0 50px;
+  height: 188px;
+  z-index: 1;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+.dot3::before {
+  content: " ";
+}
+
+/******************* Journey Section *******************/
+.industry-journey-baloon {
+  background: url("/assets/images/insustry_baloon.svg") no-repeat;
+  width: 138px;
+  height: 173px;
+  top: -86px;
+  padding: 0;
+  right: 0;
+  position: absolute;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+.journey-title {
+  color: white !important;
+}

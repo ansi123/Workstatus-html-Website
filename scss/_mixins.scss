@@ -1,0 +1,26 @@
+//media query
+@mixin breakpoint($point) {
+  @if $point==ipadlarge {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } 
+  @if $point==ipad {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } 
+  @else if $point==mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
+// transition css
+@mixin transition-all($all-duration) {
+  transition: $all-duration;
+  -webkit-transition: $all-duration;
+  -moz-transition: $all-duration;
+  -ms-transition: $all-duration;
+  -o-transition: $all-duration;
+}
